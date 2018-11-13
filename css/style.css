@@ -1,0 +1,223 @@
+/*Specification*/
+body {
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+    color: #1d809f;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #155d74;
+}
+.btn-xl {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1.25em 2.5rem;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+.btn-primary {
+    background-color: #1d809f!important;
+    border-color: #1d809f!important;
+}
+.btn-primary:active,
+.btn-primary:focus, 
+.btn-primary:hover {
+    background-color: #155d74!important;
+    border-color: #155d74!important;
+}
+.bg-primary {
+    background-color: #1d809f !important;
+}
+.text-primary {
+    color: #1d809f !important;
+}
+.text-secondary {
+    color: #ecb807 !important;
+}
+.text-week {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.text-faded {
+    color: rgba(255,255,255,.7);
+}
+h5 {
+    font-size: 1rem;
+}
+
+/*Navigation*/
+.menu {
+    position: fixed;
+    z-index: 1100;
+    right: 15px;
+    top: 15px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.menu:hover {
+    color: #fff;
+    background-color: #000;
+}
+.navigation {
+    position: fixed;
+    width: 250px;
+    right: 0;
+    background-color: #1d809f;
+    z-index: 1090;
+}
+.navigation__brand {
+    font-size: 1.2rem;
+    padding: 1.3em 3rem;
+    padding-left: 1rem;
+    background-color: rgba(52,58,64,.1);
+}
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+    background: rgba(255,255,255,.2);
+}
+.js-scrollspy-item.active {
+    background-color: #155f76;
+}
+/*Header*/
+.header {
+    min-height: 400px;
+    height: 100vh;
+    background-image: url('/stylish/img/bg-masthead.jpg');
+    background-size: cover;
+}
+.header__title {
+    font-size: 4rem;
+}
+/*About*/
+.about {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.about__title {
+    font-size: 2rem;
+}
+/*Services*/
+.services {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.services__icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
+.services__icon::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 2rem
+}
+.services__title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/*Callout*/
+.callout {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background-image: url('/stylish/img/portfolio-4.jpg');
+    background-size: cover;
+    background-position: center
+}
+.callout__title {
+    max-width: 500px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-bottom: .8em;
+}
+/*Portfolio*/
+.portfolio {
+    padding: 8rem 0;
+}
+.portfolio__title {
+    font-size: 3rem;
+}
+.portfolio__text {
+    font-size: 1.2rem;
+}
+.portfolio__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-decoration: none !important;
+}
+.portfolio__text-block {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+/*Action*/
+.action {
+    padding: 8rem 0;
+}
+/*Footer*/
+.footer {
+    padding: 5rem 0;
+}
+.footer__icon-wrapper {
+    font-size: 0;
+}
+.footer__icon {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    font-size: 1.4rem;
+}
+.footer__icon:hover,
+.footer__icon:active,
+.footer__icon:focus {
+    background-color: #155d74 !important;
+}
+.footer__icon::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.footer__copyright {
+    font-size: .8rem;
+}
+@media(min-width: 992px) {
+    /*Portfolio*/
+    .portfolio__wrapper {
+        padding: 14em 4rem 2em;
+    }
+    .portfolio__text-block {
+        position: static;
+    }
+    .portfolio__block .portfolio__wrapper,
+    .portfolio__block .portfolio__img {
+        -webkit-transition: -webkit-clip-path .25s ease-out, background-color .7s;
+        -webkit-clip-path: inset(0);
+        clip-path: inset(0);
+    }
+    .portfolio__block:hover .portfolio__wrapper,
+    .portfolio__block:hover .portfolio__img {
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem)
+    }
+    .portfolio__block:hover .portfolio__wrapper {
+        background-color: rgba(29,128,159,.9);
+    }
+}
+@media(min-width: 768px) {
+    /*Header*/
+    .header__title {
+        font-size: 5.5rem;
+    }
+}
