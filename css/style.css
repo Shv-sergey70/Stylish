@@ -192,6 +192,33 @@ h5 {
 .footer__copyright {
     font-size: .8rem;
 }
+/*Scroll-to-top*/
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.scroll-to-top__icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 1.2em;
+    transform-origin: bottom left;
+    transform: rotate(-11deg);
+    transition: transform 0.3s, background-color 0.3s;
+}
+.scroll-to-top__icon:hover {
+    background-color: rgba(0, 0, 0);
+    transform: rotate(-0deg);
+}
+.scroll-to-top__icon::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
 @media(min-width: 992px) {
     /*Portfolio*/
     .portfolio__wrapper {

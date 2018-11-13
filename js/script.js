@@ -24,4 +24,12 @@ $(document).ready(function(){
             scrollTop: $($(this).attr('href')).position().top-50
         }, 1000);
     });
+    //Scroll to top
+    $(window).on('scroll', function() {
+        if (window.pageYOffset >= 120) {
+            $('.js-scroll-to-top').show();
+        } else {
+            $('.js-scroll-to-top').hide();
+        }
+    });
 });
