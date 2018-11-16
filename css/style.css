@@ -86,13 +86,13 @@ h5 {
     background-color: #155f76;
 }
 /*Header*/
-.header {
+.heading {
     min-height: 400px;
     height: 100vh;
-    background-image: url('/stylish/img/bg-masthead.jpg');
+    background-image: url('../img/bg-masthead.jpg');
     background-size: cover;
 }
-.header__title {
+.heading__title {
     font-size: 4rem;
 }
 /*About*/
@@ -129,7 +129,7 @@ h5 {
 .callout {
     padding-top: 15rem;
     padding-bottom: 15rem;
-    background-image: url('/stylish/img/portfolio-4.jpg');
+    background-image: url('../img/portfolio-4.jpg');
     background-size: cover;
     background-position: center
 }
@@ -167,7 +167,7 @@ h5 {
 }
 /*Footer*/
 .footer {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 .footer__icon-wrapper {
     font-size: 0;
@@ -219,6 +219,12 @@ h5 {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+@media(min-width: 768px) {
+    /*Header*/
+    .heading__title {
+        font-size: 5.5rem;
+    }
+}
 @media(min-width: 992px) {
     /*Portfolio*/
     .portfolio__wrapper {
@@ -240,11 +246,5 @@ h5 {
     }
     .portfolio__block:hover .portfolio__wrapper {
         background-color: rgba(29,128,159,.9);
-    }
-}
-@media(min-width: 768px) {
-    /*Header*/
-    .header__title {
-        font-size: 5.5rem;
     }
 }
